@@ -38,17 +38,16 @@ function cellClick() {
         }
     }
 
-    
-
     if(winPositionFunction(data)){
-        restart("Выйграл игрок: " + player_x_o)
+        
+        setTimeout(alertWinner,100)
     }else{
         let draw = true;
         for(let index in cell){
             if(cell[index].innerHTML == "") draw = false;
         }
         if(draw){
-            restart("Ничья , победила дружба :)")
+            alert("Ничья , победила дружба :)")
         }
     }
 
@@ -71,9 +70,14 @@ function winPositionFunction(data){// функция которая опреде
     }
     return false;
 }
-function restart(text){
-    alert(text);
-    for(let i = 0;i<cell.length;i++){
-        cell[i].innerHTML = "";
-    }
+// function restart(text){
+//     alert(text);
+//     for(let i = 0;i<cell.length;i++){
+//         cell[i].innerHTML = "";
+//     }
+// }
+function alertWinner(){
+    player_x_o = player_x_o == "x" ? "o" : "x";//ход по очереди
+    currentPlayerJs.innerHTML = player_x_o.toUpperCase();
+    alert("Выйграл игрок: " + player_x_o)
 }
