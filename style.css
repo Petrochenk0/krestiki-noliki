@@ -14,7 +14,19 @@
     margin:auto;
 
 }
-
+.playAgain{
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    margin:0 auto;
+    display:block;
+    padding:2em;
+    border: 1px black solid;
+    border-radius: 15px;
+}
+.playAgain:hover{
+    background-color: aliceblue;
+}
 .cell {
 
     width: 50px;
