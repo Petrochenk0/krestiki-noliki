@@ -1,0 +1,44 @@
+* {margin: 0; padding: 0;}
+
+.content {
+    
+    display: flex;
+    margin: 100px 50px 50px 50px;
+    font-family: sans-serif;
+}
+
+#area {
+    width: 156px;
+    border: 1px solid #000;
+    font-size: 0;
+    margin:auto;
+
+}
+
+.cell {
+
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    border: 1px solid #000;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background .1s;
+}
+
+.cell:hover {
+    background-color: #f0ededa0;
+}
+
+.currentPlayer {
+    font-size: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+}
