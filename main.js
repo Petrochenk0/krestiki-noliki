@@ -54,6 +54,7 @@ function cellClick() {
     player_x_o = player_x_o == "x" ? "o" : "x";//ход по очереди
     currentPlayerJs.innerHTML = player_x_o.toUpperCase();
 }
+
 function winPositionFunction(data){// функция которая определяет победу игрока
     for(let index in winPosition){
         let win = true;
